@@ -1,6 +1,6 @@
 {
   "name": "@hanzo/persona",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Framework for loading, validating, and working with personality profiles",
   "type": "module",
   "main": "index.js",

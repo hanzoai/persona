@@ -1,27 +1,35 @@
 {
   "name": "@hanzo/persona",
   "version": "1.0.0",
-  "description": "Comprehensive personality profiles with OCEAN scores for AI modeling",
-  "main": "profiles/loader.js",
+  "description": "Framework for loading, validating, and working with personality profiles",
   "type": "module",
+  "main": "index.js",
   "exports": {
-    ".": "./profiles/loader.js",
-    "./profiles/*": "./profiles/*",
-    "./index": "./profiles/index.json",
-    "./categories": "./profiles/categories.json"
+    ".": "./index.js",
+    "./schemas/*": "./schemas/*",
+    "./tools/*": "./tools/*"
   },
+  "files": [
+    "index.js",
+    "schemas/",
+    "scripts/",
+    "tools/",
+    "README.md"
+  ],
   "scripts": {
-    "split": "node scripts/split-personalities.js",
-    "validate": "node scripts/validate.js",
-    "test": "node test/test-loader.js"
+    "validate": "node scripts/validate.js"
   },
   "keywords": [
     "personality",
     "ocean",
     "big-five",
+    "neo-pi-r",
+    "hexaco",
     "psychology",
     "ai",
-    "personas"
+    "personas",
+    "schema",
+    "validation"
   ],
   "author": "Hanzo AI",
   "license": "MIT",

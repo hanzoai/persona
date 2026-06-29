@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="persona" width="880"></p>
+
 # Persona
 
 Framework for loading, validating, and working with personality profiles.

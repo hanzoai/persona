@@ -1,0 +1,20 @@
+# Canonical CI/CD config for hanzoai/persona — read by the hanzoai/ci reusable
+# (.hanzo/workflows/cicd.yml) and by platform.hanzo.ai.
+#
+# No `images:`: persona is a schema package, not a service.
+#
+# `binaries:` carries what the retired npm lane carried — an artifact that
+# exists at the tag. `npm pack` produces the same tarball `npm publish` would
+# have uploaded, and the reusable attaches it to the forge release, so a
+# consumer can install the exact tag. It does not reach registry.npmjs.org;
+# that needs a publish credential the forge does not hold.
+test:
+  - name: validate schemas
+    run: |
+      set -euo pipefail
+      node scripts/validate.js
+
+binaries:
+  - name: persona
+    run: npm pack
+    out: "*.tgz"

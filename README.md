@@ -2,6 +2,8 @@
 
 # Persona
 
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/persona&ref=main&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/persona&ref=main&action=edit) [![Deploy with Hanzo](https://hanzo.app/badges/deploy-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/persona&ref=main&action=deploy)
+
 Framework for loading, validating, and working with personality profiles.
 
 Provides loaders (Rust, TypeScript, Python), JSON schemas, and CLI tools
